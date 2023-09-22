@@ -1,0 +1,244 @@
+/*Reset css/ html*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    border: none;
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+html {
+    width: 100vh;
+    height: 100vh;
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+/*Menu*/
+
+.conteudo {
+    width: 100vw;
+    height: 70px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(93, 90, 117);
+    position: fixed;
+    padding-left: 30rem;
+}
+
+.logo {
+    width: 70px;
+    height: auto;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.logo h3 {
+    color: white;
+    font-size: 1.6rem;
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+}
+
+.conteudo .lista-menu {
+    width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.conteudo .lista-menu li a {
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    color: white;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    transition: all 200ms ease-in;
+}
+
+.conteudo .lista-menu li a:hover {
+    background-color: rgb(132, 118, 150);
+    border-bottom: 4px solid rgba(255, 255, 255, 0.801);
+    color: rgb(156, 170, 216);
+}
+
+/*Primeira-sessão*/
+
+.primeira-sessão {
+   height: 100vh;
+   background-image:linear-gradient(rgba(29, 29, 29, 0.8), rgba(29, 29, 29, 0.8)) ,url(./img/fundo.png);
+   background-position: center center;
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position-y: 60px;
+   background-position-x:  0px;
+   width: 100vw;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.primeira-sessão .conteudo-principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.primeira-sessão h1 {
+    color: rgb(210, 212, 221);
+    font-size: 45px;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.primeira-sessão h2 {
+    color: rgb(173, 183, 216);
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-bottom: 3rem;
+}
+
+/*Segunda sessão/ Sobre nós*/
+
+.segunda-sessão {
+    background-image:linear-gradient(rgba(29, 29, 29, 0.8), rgba(29, 29, 29, 0.8)) ,url(./img/fundoSessao2.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x:  0px;
+    background-position: absolute;
+    width: 100vw;
+    text-align: center;
+}
+
+.segunda-sessão .conteudo-secundario h1 {
+    color: rgb(210, 212, 221);
+    font-size: 60px;
+    text-transform: uppercase;
+    
+}
+
+.segunda-sessão .conteudo-secundario h2 {
+    color: rgb(173, 183, 216);
+    font-size: 45px;
+}
+
+.segunda-sessão .conteudo-secundario h3 p {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 50px;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #ffffff;
+    text-align: justify;
+    size: 10px;
+    margin-top: 80px;
+    margin-left: 650px;
+}
+
+
+.segunda-sessão .conteudo-secundario .logoSessao2 {
+    margin-bottom: 90px;
+}
+
+/*Contato/ Formulário*/
+
+.primeira-sessão .contact-form {
+    color: white;
+    text-transform: uppercase;
+
+}
+.primeira-sessão input {
+    width: 100%;
+    
+}
+.primeira-sessão input[type=text] {
+    height: 100px;
+    margin-top: 0.5px;
+}
+
+.primeira-sessão button {
+    background-color: white;
+    border: none;
+    width: 100px;
+    height: 30px;
+    margin-top: 1rem;
+}
+
+/*Projetos*/
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+
+.grid-item {
+    padding: 10px;
+}
+
+.grid-item img {
+    width: 100%;
+    height: 100%;
+}
+
+.texto {
+    margin-top: 20px;
+}
+
+.texto h2 {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.texto p {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #ffffff;
+    text-align: justify;
+    text-align: center;
+}
+
+.texto2 {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #ffffff;
+    text-align: justify;
+    text-align: center;
+}
+
+.texto3 {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #ffffff;
+    text-align: justify;
+    text-align: center;
+}
+
+/*Roda pé*/
+
+footer {
+    background-color: rgb(132, 118, 150);
+    color: rgb(156, 170, 216);
+    padding-top: 0rem;
+    padding-left: 1rem;
+    color: white;
+    font-size: 10px;
+    text-transform: uppercase;
+    text-align: center;
+    justify-content: space-between;
+    
+}

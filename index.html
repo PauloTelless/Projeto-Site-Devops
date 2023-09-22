@@ -1,0 +1,81 @@
+<!-- A ideia do projeto é apresentar uma empresa ficticia chamada "Telles Solution",
+a qual tem proposta de solucionar négocios com o uso de tecnologia de ponta. Portanto, dados e exemplos
+são meramentes ilustrativos e ficticios. 
+email = ptelles020@gmail.com
+senha =-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Telles ©</title>
+    <script src="./script.js" defer></script>
+    <link rel="shortcut icon" href="./ico/logo.ico" type="image/x-icon">
+    <!--Link de referência para relacionar imagens do icon da aba de navegação-->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+    <!--Link utilizado para relacionar imagens do site bootstrap-->
+</head>
+<body> 
+    <header class="conteudo"><!--Início header-->
+        <div class="logo">
+            <img src="./img/logo.png" alt="">
+            <h3>Solution</h3>
+        </div>
+        <nav><!--Início nav-->
+            <ul class="lista-menu">
+                <li><a href="index.html">Sobre nós</a></li>
+                <li><a href="projeto.html">Projetos</a></li>
+                <li><a href="contato.html">Contatos</a></li>
+                <li><a href="https://github.com/PauloTelless" target="_blank"><i class="bi bi-github" ></i></a></li>
+                <li><a href="https://www.linkedin.com/in/paulo-souza-telles-filho-183977250/" target="_blank"><i class="bi bi-linkedin"></i></a></li>
+            </ul>
+        </nav> <!--Fim nav-->
+    </header> <!--Fim header-->
+    <section class="primeira-sessão"> <!--Início primeira section-->
+        <div class="conteudo-principal">
+            <h1>Telles <span class="auto-type"></span></h1>
+            <h2>Tecnologia embarcada para o seu negócio</h2>
+        </div>
+    </section> <!--Fim primeira section-->
+
+    <section class="segunda-sessão">
+        <img class="logoSessao2" src="./img/logo.png">
+        <div class="conteudo-secundario">
+            <h1>Sobre nós <span class="auto-type2"></span></h1>
+            <h2>Um pouco da nossa história</h2>
+            <h3>
+                <p>
+                    A Telles Solution é uma empresa líder em soluções tecnológicas para empresas em todo o mundo. Fundada por dois amigos de infância apaixonados por tecnologia, a empresa oferece serviços de alta qualidade e inovação. 
+                    Começando em uma pequena sala nos fundos de uma loja, a Telles Solution cresceu rapidamente, ajudando empresas a otimizar seus processos com soluções inovadoras e eficientes. 
+                    A empresa continua a crescer e a expandir seus serviços, sempre mantendo-se atualizada com as mais recentes tecnologias para oferecer aos clientes as melhores soluções possíveis.
+                </p>
+            </h3>
+            <h3 class="paragrafo-segundo">
+                <p>
+                    Com o passar dos anos, a Telles Solution tornou-se uma referência em soluções tecnológicas para empresas de diversos setores. Seus serviços incluem consultoria, desenvolvimento de software personalizado, implantação de sistemas, suporte técnico e treinamento para os usuários.
+                </p>
+            </h3>
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed(".auto-type" , {
+            strings: ["Solution", "é tudo"],
+            typeSpeed:150,
+            backSpeed:150,
+            loop: false
+        })
+
+    </script>
+
+    <footer>
+        <p>
+            Telles Solution ©
+        </p>
+    </footer>
+</body>
+</html>
